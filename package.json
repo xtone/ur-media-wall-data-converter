@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "main": "main/index.js",
+  "productName": "UR_Media_Wall",
+  "name": "ur_media_wall",
+  "version": "0.1.0",
+  "scripts": {
+    "check-data-file-exist": "node --loader ts-node/esm scripts/checkDataFileExist/ "
+  },
+  "dependencies": {}
+}
