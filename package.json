@@ -6,7 +6,8 @@
   "version": "0.1.0",
   "scripts": {
     "check-data-file-exist": "node --loader ts-node/esm scripts/checkDataFileExist/ ",
-    "make-original-image-information": "node --loader ts-node/esm scripts/makeOriginalImageInformation/ > makeOriginalImageInformation.txt "
+    "make-original-image-information": "node --loader ts-node/esm scripts/makeOriginalImageInformation/ > makeOriginalImageInformation.txt ",
+    "check-image-rotate": "node --loader ts-node/esm scripts/checkImageRotate/ > checkImageRotate.txt"
   },
   "dependencies": {}
 }
