@@ -5,7 +5,8 @@
   "name": "ur_media_wall",
   "version": "0.1.0",
   "scripts": {
-    "check-data-file-exist": "node --loader ts-node/esm scripts/checkDataFileExist/ "
+    "check-data-file-exist": "node --loader ts-node/esm scripts/checkDataFileExist/ ",
+    "make-original-image-information": "node --loader ts-node/esm scripts/makeOriginalImageInformation/ > makeOriginalImageInformation.txt "
   },
   "dependencies": {}
 }
