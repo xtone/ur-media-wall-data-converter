@@ -11,7 +11,7 @@ const dataXlsx = [
 
 const dataJson = JSON.stringify(dataXlsx, undefined, 2)
 
-writeFileSync('./renderer/public/assets/json/dataXlsx.json', dataJson)
+writeFileSync('./data/json/dataXlsx.json', dataJson)
 
 function sortBy<T>(array: T[], key1: keyof T, key2: keyof T): T[] {
   return array.sort((a, b) => {
