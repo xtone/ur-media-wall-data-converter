@@ -3,11 +3,24 @@ import path from 'path'
 import sharp from 'sharp'
 import json from '../../data/json/originalImageInformation.json'
 
+const dataDir =
+  process.argv
+    .find((v) => {
+      return v.startsWith('--data-dir=')
+    })
+    ?.replace('--data-dir=', '') ?? ''
+
+if (!dataDir) {
+  throw new Error('data-dir must be specified.')
+}
+
+console.log('dataDir', dataDir)
+
 // 対象とするディレクトリ
 const dirOriginal = './data/originalData'
-const dirOrigin = './data/origin'
-const dirDefault = './data/default'
-const dirThumbnail = './data/thumbnail'
+const dirOrigin = dataDir + '/origin'
+const dirDefault = dataDir + '/default'
+const dirThumbnail = dataDir + '/thumbnail'
 
 // ファイル名のみ取得
 function getFileList(dir: string, extensions: string[]): string[] {
