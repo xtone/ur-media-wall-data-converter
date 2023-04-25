@@ -5,6 +5,7 @@
   "name": "ur_media_wall",
   "version": "0.1.0",
   "scripts": {
+    "create:data": "node --loader ts-node/esm scripts/createData/ ",
     "create:tag-list": "node --loader ts-node/esm scripts/createTagList/ ",
     "create:floor-data": "node --loader ts-node/esm scripts/createFloorData/ ",
     "check-data-file-exist": "node --loader ts-node/esm scripts/checkDataFileExist/ ",
