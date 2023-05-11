@@ -9,6 +9,19 @@ const data = [
 ]
 
 writeFileSync(
+  './data/json/itemList_idSort.json',
+  JSON.stringify(
+    data.sort((a, b) => {
+      if (a.id < b.id) return -1;
+      if (a.id > b.id) return 1;
+      return 0;
+    }),
+    undefined,
+    2
+  )
+)
+
+writeFileSync(
   './data/json/itemList.json',
   JSON.stringify(
     data.sort(() => Math.random() - 0.5),
